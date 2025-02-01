@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: beige;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: lightblue;
+  padding: 25px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 300;
+  min-width: 0;
+  font-size: x-small;
+}
+
+.calc-text {
+  margin-bottom: 20px;
+  padding-left: 5px;
+  background-color: #03045e;
+  border-radius: 10px;
+}
+
+.calc-text p {
+  width: 100%;
+  font-size: 3.5rem;
+  text-align: end;
+  background: transparent;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+button {
+  background-color: #03045e;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 65px;
+  width: 65px;
+}
+
+button:active,
+button:focus {
+  filter: brightness(150%);
+}
+
+.calc-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+}
+
+.key-zero {
+  grid-column: span 2;
+  width: 95%;
+  border-radius: 30px;
+}
+
+.key-operate {
+  background-color: #fa8334;
+}
+
+.key-others {
+  background-color: #ae716b;
+}
+
+html.dark-mode {
+  background-color: #060e0e;
+  color: white;
+}
+
+html.dark-mode .container {
+  background-color: rgb(35, 60, 60);
+}
+
+html.dark-mode .calc-text {
+  background-color: #9fb1bc;
+}
+
+html.dark-mode .calc-text p {
+  color: #060e0e;
+}
+
+html.dark-mode button {
+  background-color: #9fb1bc;
+  color: black;
+}
+
+html.dark-mode .key-operate {
+  background-color: #c5e99b;
+}
+
+html.dark-mode .key-others {
+  background-color: #feffbe;
+}
