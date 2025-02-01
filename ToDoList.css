@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+  background-image: linear-gradient(#eaeae6, #ffffd1);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  border-radius: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+tr,
+td {
+  border: 2px solid black;
+  text-align: center;
+}
+
+td {
+  width: 50%;
+}
+
+.table1 {
+  font-weight: bolder;
+}
+
+#DoItems .listItem {
+  background: linear-gradient(lightblue 0%, rgb(45, 143, 255) 100%);
+  color: #060e0e;
+  border: 1px solid #060e0e;
+  border-radius: 15px;
+  padding: 10px;
+  width: 85%;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+#DoneItems .listItem {
+  background: linear-gradient(rgb(186, 255, 186) 0%, rgb(20, 255, 91) 100%);
+  color: #060e0e;
+  border: 1px solid #060e0e;
+  border-radius: 15px;
+  padding: 10px;
+  width: 85%;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+html.dark-mode {
+  background-image: linear-gradient(#060e0e, rgb(0, 0, 90));
+  color: whitesmoke;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html.dark-mode table,
+html.dark-mode tr,
+html.dark-mode td{
+  border: 2px solid white;
+}
+
+html.dark-mode #DoneItems .listItem{
+  background: linear-gradient(rgb(150, 0, 0) 0%, rgb(231, 0, 0) 100%);
+  color: whitesmoke;
+  border: 1px solid #060e0e;
+}
+
+html.dark-mode #DoItems .listItem {
+  background: linear-gradient(rgb(87, 0, 97) 0%, rgb(183, 0, 196) 100%);
+  color: whitesmoke;
+  border: 1px solid black;
+}
